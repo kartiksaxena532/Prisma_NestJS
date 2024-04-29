@@ -1,6 +1,6 @@
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-  <a href="http://nestjs.com/" target="blank"><img src="[https://nestjs.com/img/logo-small.svg](https://www.prisma.io/)" width="200" alt="Prisma Logo" /></a>
+  <a href="http://nestjs.com/" target="blank"><img src="[[https://nestjs.com/img/logo-small.svg](https://www.prisma.io/)](https://prismalens.vercel.app/header/logo-white.svg)" width="200" alt="Prisma Logo" /></a>
 </p>
 
 
