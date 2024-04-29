@@ -17,18 +17,18 @@ follow the setup steps below :
 
 ```bash
 #node modules install
-$npm i
+npm i
 #initialize nest cli
-$npm i -g @nestjs/cli
+npm i -g @nestjs/cli
 #make nest new product
-$nest new  product
+nest new  product
 
 ```
 
 ## Running the app
 ```bash
 # watch mode
-$ npm run start:dev
+ npm run start:dev
 
 ```
 
@@ -36,12 +36,12 @@ $ npm run start:dev
 
 ```bash
 #dev dependecies of prisma
-$npm install prisma -D
+npm install prisma -D
 
 #prisma setup
-$npx prisma init
+npx prisma init
 #environmet wariable
-$DATABASE_URL="postgres://product:productPassword@localhost:5444/product"
+DATABASE_URL="postgres://product:productPassword@localhost:5444/product"
 
 ```
 ## Prisma Schema 
@@ -61,10 +61,10 @@ model Product {
 
 ```bash
 #Db migrate
-$npx prisma migrate dev --name init
+npx prisma migrate dev --name init
 #prisma cleint setup
-$npx nest generate module prisma
-$npx nest generate service prisma
+npx nest generate module prisma
+npx nest generate service prisma
 
 ```
 
