@@ -69,11 +69,9 @@ $npx nest generate service prisma
 ```
 
 
-## Stay in touch
+## Author
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Kartik Saxena
 
 ## License
 
