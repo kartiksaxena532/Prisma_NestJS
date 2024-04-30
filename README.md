@@ -75,7 +75,3 @@ We can use swagger to test the api.
 ## Author
 
 Kartik Saxena
-
-## License
-
-Nest is [MIT licensed](LICENSE).
