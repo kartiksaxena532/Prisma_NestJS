@@ -6,13 +6,14 @@ import {
   Delete,
   Body,
   Param,
-} from '@nestjs/common';
-import { ProductService } from './app.service';
+} from "@nestjs/common";
+
+import { ProductService } from './product.service';
 import { Product } from '@prisma/client';
 
 @Controller('products')
 export class ProductController {
-  constructor(private readonly productService: ProductService) {}
+  constructor(private readonly productService: ProductService) { }
 
   @Post()
   create(@Body() productData: Product): Promise<Product> {
@@ -24,13 +25,17 @@ export class ProductController {
     return this.productService.findAll();
   }
 
-  @Put(':id')
+  @Put(":id")
   update(@Param('id') id: string, @Body() productData: Product): Promise<Product> {
     return this.productService.update(parseInt(id), productData);
   }
 
-  @Delete(':id')
+  @Delete(":id")
+
   delete(@Param('id') id: string): Promise<void> {
+
     return this.productService.delete(parseInt(id));
+
   }
+
 }
