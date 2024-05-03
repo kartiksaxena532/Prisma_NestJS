@@ -1,10 +1,7 @@
-import { Module } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import { ProductService } from './product.service';
-import { ProductController } from './product.controller';
+import { Prisma, ProductCreateInput } from "@prisma/client";
 
-@Module({
-    providers: [PrismaService, ProductService],
-    controllers: [ProductController],
-})
-export class ProductModule {}
+export class Product implements ProductCreateInput {
+     id: number;
+     title: string;
+     description?: string;
+}

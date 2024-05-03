@@ -1,24 +1,37 @@
-import { Injectable } from '@nestjs/common';
-import { PrismaService } from './prisma.service';
-import { Product } from '@prisma/client';
+import { PrismaService } from "src/prisma.service";
+import { Product } from "./product.model";
+import { Injectable } from "@nestjs/common";
+
 
 @Injectable()
 export class ProductService {
-  constructor(private prisma: PrismaService) {}
 
-  async create(productData: Product): Promise<Product> {
-    return this.prisma.product.create({ data: productData });
-  }
+     constructor(private prisma: PrismaService) { }
 
-  async findAll(): Promise<Product[]> {
-    return this.prisma.product.findMany();
-  }
+     async getAllProduct(): Promise<Product[]> {
+          return this.prisma.product.findMany()
+     }
 
-  async update(id: number, productData: Product): Promise<Product> {
-    return this.prisma.product.update({ where: { id }, data: productData });
-  }
+     async getProduct(id: number): Promise<Product | null> {
+          return this.prisma.product.findUnique({ where: { id: Number(id) } })
+     }
 
-  async delete(id: number): Promise<void> {
-    await this.prisma.product.delete({ where: { id } });
-  }
+     async createProduct(data: Product): Promise<Product> {
+          return this.prisma.product.create({
+               data,
+          })
+     }
+
+     async updateProduct(id: number, data: Product): Promise<Product> {
+          return this.prisma.product.update({
+               where: { id: Number(id) },
+               data: { title: data.title, description: data.description }
+          })
+     }
+
+     async deleteProduct(id: number): Promise<Product> {
+          return this.prisma.product.delete({
+               where: { id: Number(id) }
+          })
+     }
 }

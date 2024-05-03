@@ -3,15 +3,14 @@
   <a href="https://www.prisma.io" target="blank"><img src="https://prismalens.vercel.app/header/logo-white.svg" width="400" alt="Prisma Logo" /></a>
 </p>
 
-
-
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+
 API for product for crud oprations in nest js and prisma orm.
 
-follow the setup steps below : 
+follow the setup steps below :
 
 ## Installation
 
@@ -26,6 +25,7 @@ nest new  product
 ```
 
 ## Running the app
+
 ```bash
 # watch mode
  npm run start:dev
@@ -44,7 +44,8 @@ npx prisma init
 DATABASE_URL="postgres://product:productPassword@localhost:5444/product"
 
 ```
-## Prisma Schema 
+
+## Prisma Schema
 
 ```
 model Product {
@@ -67,7 +68,9 @@ npx nest generate module prisma
 npx nest generate service prisma
 
 ```
+
 ## Testing
+
 ```
 We can use swagger to test the api.
 ```
