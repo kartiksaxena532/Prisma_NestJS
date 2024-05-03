@@ -14,22 +14,36 @@ follow the setup steps below :
 
 ## Installation
 
-```bash
-#node modules install
-npm i
-#initialize nest cli
-npm i -g @nestjs/cli
-#make nest new product
-nest new  product
+## Installation
 
+```bash
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
-# watch mode
- npm run start:dev
+# development
+$ yarn run start
 
+# watch mode
+$ yarn run start:dev
+
+# production mode
+$ yarn run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ yarn run test
+
+# e2e tests
+$ yarn run test:e2e
+
+# test coverage
+$ yarn run test:cov
 ```
 
 ## Prisma Setup
