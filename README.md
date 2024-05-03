@@ -12,7 +12,6 @@ API for product for crud oprations in nest js and prisma orm.
 
 follow the setup steps below :
 
-## Installation
 
 ## Installation
 
