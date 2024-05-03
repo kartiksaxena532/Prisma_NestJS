@@ -85,7 +85,7 @@ npx nest generate service prisma
 ## Testing
 
 ```
-We can use swagger to test the api.
+We can use swagger or postman to test the api.
 ```
 
 ## Author
