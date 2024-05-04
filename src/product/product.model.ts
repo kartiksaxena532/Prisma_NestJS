@@ -1,7 +1,7 @@
 import { Prisma } from "@prisma/client";
 
 
-export class Product implements Prisma.ProductCreateInput {
+export class Product implements ProductCreateInput {
      id: string;    
      name:string;
      price:number;

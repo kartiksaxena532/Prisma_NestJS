@@ -1,8 +1,10 @@
 -- CreateTable
-CREATE TABLE "Book" (
+CREATE TABLE "PRODUCT" (
     "id" SERIAL NOT NULL,
-    "title" TEXT NOT NULL,
     "description" TEXT,
-
-    CONSTRAINT "Book_pkey" PRIMARY KEY ("id")
+    "name" TEXT NOT NULL,
+    "price" DECIMAL(65, 30) NOT NULL,
+    "stockQuantity" INTEGER NOT NULL,
+    "category" TEXT NOT NULL
+    CONSTRAINT "Product_pkey" PRIMARY KEY ("id")
 );

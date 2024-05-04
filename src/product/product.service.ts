@@ -18,14 +18,15 @@ export class ProductService {
 
      async createProduct(data: Product): Promise<Product> {
           return this.prisma.product.create({
-               data,
+               data: {id : data.id , name :data.name, description :data.description ,price: data.price , category : data.category ,stockQuantity : data.stockQuantity }
           })
      }
 
      async updateProduct(id: number, data: Product): Promise<Product> {
           return this.prisma.product.update({
                where: { id: Number(id) },
-               data: { title: data.title, description: data.description }
+               data: { price: data.price , category : data.category ,stockQuantity : data.stockQuantity }
+             
           })
      }
 
