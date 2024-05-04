@@ -54,7 +54,7 @@ npm install prisma -D
 #prisma setup
 npx prisma init
 #environmet wariable
-DATABASE_URL="postgres://product:productPassword@localhost:5444/product"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/test?schema=public"
 
 ```
 
