@@ -12,24 +12,37 @@ API for product for crud oprations in nest js and prisma orm.
 
 follow the setup steps below :
 
+
 ## Installation
 
 ```bash
-#node modules install
-npm i
-#initialize nest cli
-npm i -g @nestjs/cli
-#make nest new product
-nest new  product
-
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
-# watch mode
- npm run start:dev
+# development
+$ yarn run start
 
+# watch mode
+$ yarn run start:dev
+
+# production mode
+$ yarn run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ yarn run test
+
+# e2e tests
+$ yarn run test:e2e
+
+# test coverage
+$ yarn run test:cov
 ```
 
 ## Prisma Setup
@@ -72,7 +85,7 @@ npx nest generate service prisma
 ## Testing
 
 ```
-We can use swagger to test the api.
+We can use swagger or postman to test the api.
 ```
 
 ## Author
